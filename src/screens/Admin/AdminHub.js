@@ -8,6 +8,12 @@ import Ionicons from "react-native-vector-icons/Ionicons";
 
 const menuItems = [
 	{
+		title: "Announcements",
+		icon: "assignment-ind",
+		screen: "AnnouncementAdmin",
+		privilege: "eboard"
+	},
+	{
 		title: "Election",
 		icon: "check",
 		screen: "ElectionAdmin",

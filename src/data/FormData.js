@@ -228,12 +228,28 @@ const upsertCommittee = [
 	}
 ];
 
+const announcements = [
+	{
+		placeholder: "Title",
+		camelCaseName: "title",
+		type: "Input",
+		isRequired: true
+	},
+	{
+		placeholder: "Announcement",
+		camelCaseName: "message",
+		type: "Input",
+		isRequired: true
+	}
+];
+
 export {
 	upsertEventFormData,
 	editProfileFormDataPrivileged,
 	editProfileFormDataRegular,
 	registrationFormData,
-	upsertCommittee
+	upsertCommittee,
+	announcements
 };
 
 // functions

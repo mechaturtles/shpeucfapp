@@ -6,11 +6,13 @@ All Screen Exports here grouped by folder
 
 /** Export Admin **/
 import AdminHub from "./Admin/AdminHub";
+import AnnouncementAdmin from "./Admin/AnnouncementAdmin";
 import CommitteesAdmin from "./Admin/CommitteesAdmin";
 import ElectionAdmin from "./Admin/ElectionAdmin";
 import MemberAdmin from "./Admin/MemberAdmin";
 export {
 	AdminHub,
+	AnnouncementAdmin,
 	CommitteesAdmin,
 	ElectionAdmin,
 	MemberAdmin

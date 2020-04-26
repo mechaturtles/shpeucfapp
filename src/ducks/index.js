@@ -12,6 +12,7 @@ export * from "./Events";
 export * from "./General";
 export * from "./Elections";
 export * from "./Committees";
+export * from "./Announcements";
 
 export default combineReducers({
 	user: UserReducer,

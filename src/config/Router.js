@@ -14,6 +14,7 @@ import CommitteeForm from "../components/general/CommitteeForm";
 /** Import Admin **/
 import {
 	AdminHub,
+	AnnouncementAdmin,
 	CommitteesAdmin,
 	ElectionAdmin,
 	MemberAdmin
@@ -43,7 +44,7 @@ import {
 	About,
 	Dashboard,
 	Leaderboard,
-	More
+	More,
 } from "../screens";
 
 /** Import User **/
@@ -349,6 +350,12 @@ const RouterComponent = () => {
 							<Scene
 								key = "AdminHub"
 								component = { AdminHub }
+							/>
+							<Scene
+								key = "AnnouncementAdmin"
+								component = { AnnouncementAdmin }
+								title = "Announcements"
+								hideTabBar
 							/>
 							<Scene
 								key = "ElectionAdmin"
