@@ -232,8 +232,10 @@ class Form extends Component {
 			case "Input":
 				return <Input
 					placeholder = { placeholder }
-					multiline = { false }
 					value = { this.state[camelCaseName] || "" }
+					multiline = { options && options.multiline }
+					maxLength = { options && options.maxLength }
+					numberOfLines = { options && options.numberOfLines }
 					secureTextEntry = { options && options.secureTextEntry }
 					keyboardType = { options && options.keyboardType }
 					onChangeText = { value => this.changeState(camelCaseName, value) }

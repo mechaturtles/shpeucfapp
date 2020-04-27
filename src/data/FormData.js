@@ -233,13 +233,23 @@ const announcements = [
 		placeholder: "Title",
 		camelCaseName: "title",
 		type: "Input",
-		isRequired: true
+		isRequired: true,
+		options: {
+			multiline: true,
+			numberOfLines: 2,
+			maxLength: 100
+		}
 	},
 	{
 		placeholder: "Announcement",
 		camelCaseName: "message",
 		type: "Input",
-		isRequired: true
+		isRequired: true,
+		options: {
+			multiline: true,
+			numberOfLines: 3,
+			maxLength: 5000
+		}
 	}
 ];
 

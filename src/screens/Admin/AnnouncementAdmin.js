@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Actions } from "react-native-router-flux";
 import { View, Text, SafeAreaView, Dimensions, TouchableOpacity } from "react-native";
 
-
 import { Button, Input } from "../../components/general";
 import { Form } from "../../components";
 import { announcements } from "../../data/FormData";
@@ -34,17 +33,16 @@ class AnnouncementAdmin extends Component {
 					</TouchableOpacity>
 				</View>
 				<Form
-					elements= { announcements }
+					elements = { announcements }
 					title = "Announcements"
 					visible = { this.state.formVisibility }
 					changeVisibility = { (visible) => this.setState({ formVisibility: visible }) }
 					onSubmit = { (announcement) => postAnnouncement(announcement) }
-					onCancel = { () => console.log("I've been cancelled") }
+					// onCancel = { () => console.log("Announcement creation cancelled") }
 					submitButtonName = "Submit"
 				/>
 			</SafeAreaView>
-			
-		)
+		);
 	}
 }
 
