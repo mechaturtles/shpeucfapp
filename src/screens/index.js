@@ -40,8 +40,10 @@ export {
 
 /** Export Events **/
 import Events from "./Events/Events";
+import EventDetails from "./Events/EventDetails";
 export {
-	Events
+	Events,
+	EventDetails
 };
 
 /** Export General **/

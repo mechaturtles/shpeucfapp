@@ -3,8 +3,6 @@ import React from "react";
 import { Router, Scene, Stack, ActionConst } from "react-native-router-flux";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import { Spinner } from "../components/general";
-import CreateEvent from "../components/event/CreateEvent";
-import EventDetailsForm from "../components/event/EventDetails";
 import CandidateForm from "../components/elect/CandidateForm";
 import PositionForm from "../components/elect/PositionForm";
 import CommitteeForm from "../components/general/CommitteeForm";
@@ -36,7 +34,8 @@ import {
 
 /** Import Events **/
 import {
-	Events
+	Events,
+	EventDetails
 } from "../screens";
 
 /** Import General  **/
@@ -160,11 +159,6 @@ const RouterComponent = () => {
 								title = "CommitteePage"
 								hideTabBar
 							/>
-							<Scene
-								key = "createEventCPD"
-								component = { CreateEvent }
-								title = "Event Creation"
-							/>
 							<Stack
 								key = "eventDetailsCPD"
 								title = "EventDetails"
@@ -173,7 +167,7 @@ const RouterComponent = () => {
 							>
 								<Scene
 									key = "eventDetailsCPD"
-									component = { EventDetailsForm }
+									component = { EventDetails }
 									title = "Event Details"
 								/>
 								<Scene
@@ -220,17 +214,12 @@ const RouterComponent = () => {
 						>
 							<Scene
 								key = "eventDetailsD"
-								component = { EventDetailsForm }
+								component = { EventDetails }
 								title = "Event Details"
 							/>
 							<Scene
 								key = "OtherProfileD"
 								component = { OtherProfile }
-							/>
-							<Scene
-								key = "createEventD"
-								component = { CreateEvent }
-								title = "Event Creation"
 							/>
 						</Stack>
 					</Stack>
@@ -251,13 +240,6 @@ const RouterComponent = () => {
 							title = "Profile"
 							leftTitle = "Back"
 						/>
-						<Scene
-							key = "createEventE"
-							component = { CreateEvent }
-							title = "Event Creation"
-							hideNavBar
-							hideTabBar
-						/>
 						<Stack
 							key = "eventDetails"
 							hideNavBar
@@ -265,7 +247,7 @@ const RouterComponent = () => {
 						>
 							<Scene
 								key = "eventDetails"
-								component = { EventDetailsForm }
+								component = { EventDetails }
 								title = "Event Details"
 							/>
 							<Scene
@@ -411,11 +393,6 @@ const RouterComponent = () => {
 									title = "CommitteePage"
 									hideTabBar
 								/>
-								<Scene
-									key = "createEventC"
-									component = { CreateEvent }
-									title = "Event Creation"
-								/>
 								<Stack
 									key = "eventDetailsC"
 									title = "EventDetails"
@@ -424,7 +401,7 @@ const RouterComponent = () => {
 								>
 									<Scene
 										key = "eventDetailsC"
-										component = { EventDetailsForm }
+										component = { EventDetails }
 										title = "Event Details"
 									/>
 									<Scene
