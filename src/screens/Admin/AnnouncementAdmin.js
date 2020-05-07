@@ -1,19 +1,14 @@
 import React, { Component } from "react";
 import { Actions } from "react-native-router-flux";
-import { View, Text, SafeAreaView, Dimensions, TouchableOpacity } from "react-native";
-
-import { Button, Input } from "../../components/general";
+import { View, Text, SafeAreaView, TouchableOpacity } from "react-native";
 import { Form } from "../../components";
 import { announcements } from "../../data/FormData";
 import { NavBar } from "../../components/general";
 import { postAnnouncement } from "../../ducks";
 
-const dimension = Dimensions.get("window");
-
 class AnnouncementAdmin extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			formVisibility: false
 		};
@@ -49,7 +44,7 @@ class AnnouncementAdmin extends Component {
 const styles = {
 	formContainerStyle: {
 		backgroundColor: "#0c0b0b",
-		height: dimension.height
+		height: "100%"
 	},
 	page: {
 		flex: 1,

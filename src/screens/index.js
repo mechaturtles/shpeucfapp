@@ -47,11 +47,13 @@ export {
 };
 
 /** Export General **/
+import Announcements from "./General/Announcements";
 import Dashboard from "./General/Dashboard";
 import Leaderboard from "./General/Leaderboard";
 import More from "./General/More";
 export * from "./General/About";
 export {
+	Announcements,
 	Dashboard,
 	Leaderboard,
 	More
